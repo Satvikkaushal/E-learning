@@ -1,0 +1,30 @@
+<app-dummylogin></app-dummylogin>
+<div class="content">
+    <br><br><br><br><br>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+              <div class="fadeIn first">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBfhpL8_0wCHpwyiCXoX5hZxT8vCl9nJ9rNt6e_s1r2zaEbFLR" id="icon" alt="User Icon"  />
+              </div>
+          
+     
+              <form >
+               <input type="text" id="login" class="fadeIn second" [(ngModel)]="username" name="login" placeholder="User Id" required>
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password"><br>
+                <select class="fadeIn third" id="select" (change)="selectChangeHandler($event)" >
+                <option selected>Choose...</option>
+                <option value="Employee">Employee</option>
+                <option value="Manager">Manager</option>
+                <option value="Admin">Admin</option>
+                </select>
+                <!-- <button onclick="location.href = '';" type="button" class="btn-primary" >Log In</button><br> -->
+                <button disabled class="signin" id="signin" (click)="sendname()" routerLink="/{{selectedUsertype}}" >Log In</button>
+              </form>
+              <div id="formFooter">
+                <a class="underlineHover" href="#" routerLink='/forget'>Forgot Password?</a>
+              </div>
+          
+            </div>
+          </div>
+  <br><br><br><br><br><br>
+    </div>

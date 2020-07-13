@@ -1,0 +1,63 @@
+<app-afterlogin></app-afterlogin>
+<br>
+<div class="employeetext"><div class="row">
+  <div class="col-sm-3 col-md-6">
+    <h2>Available Courses</h2>
+  </div>
+  <div class="col-sm-9 col-md-6">
+    <h5><img id="search" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3osnzxZaACh_8bjtGUq8H0YSfoOybnIgnIustraZeIdGcWQaT" width="50" height="40"><input type="textarea" id="myInput" onkeyup="myFunction()" placeholder="Search by names"  ></h5>
+  </div>
+</div>
+  <div class="available"><div class="inner">
+    <table id="myTable">
+      <tr class="header" style="text-align:center">
+      <tr *ngFor ='let user of users$' style="text-align:center">
+        <td><img src="{{user.courseImage}}" width="300" height="100"></td>
+        <td>{{user.courseName}}</td>
+        <td>{{user.courseDescription}}</td>  
+        <td>{{user.courseType}}<br>{{user.courseAvailable}}</td>
+        <td>{{user.courseDuration}}</td>
+
+        <td><button (click)="addtomycourse(user.courseId)"  class="btn btn-danger">Add</button></td>
+        </tr>
+    </table>
+  </div></div>
+ </div>
+
+  
+<button type="button" class="btn btn-danger mypopup"  data-toggle="modal" data-target="#myModal">
+  Request New Course
+</button>
+
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  
+  
+  <div class="modal-header">
+  <h4 class="modal-title">Request For New Course</h4>
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  
+  <form>
+      <h5>Name Of cousre</h5><input type="text" id="nameForRequest"[(ngModel)]="details.reqCourse" name="course"><br><br>
+      <h5>Justification</h5><textarea id="justificationForRequest" onfocus="remaining(this)" maxlength="150" [(ngModel)]="details.reqCJustification" name="justification" minlength="10"></textarea><br><br>
+      <div id="textarea_feedback"></div>
+      <input type="button" class="btn btn-primary" value="submit" id="submit" (click)="addReqcourse()" data-dismiss="modal">
+      <!-- <button type="reset" id="reset" class="btn btn-primary" (click)="reset()" value="reset">Reset</button> -->
+    </form>
+  
+  </div>
+  </div>
+ </div><br><br><br>
+ <!-- classRoom -->
+
+
+ 
+
+
+
+
+
+

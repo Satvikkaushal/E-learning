@@ -1,0 +1,73 @@
+
+.available{
+  margin-left: 20px;
+  
+  border:2px solid black;
+  color:black;  
+  overflow:hidden;
+  text-align:justify;  
+  width: 1000px;  
+}
+
+.available .inner {
+  height:500px;
+  overflow:auto;
+  margin:15px -300px 15px 15px;
+  padding-right:300px;
+}
+ 
+  .employeetext{
+    padding-left:120px;
+  }
+  #search{
+margin-left: 130px;
+  }
+  h2{
+    font-weight: 800;
+  }
+ #mymodal{
+   border: 1px solid;
+ }
+    #nameForRequest{
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 5px 7px;
+      margin-top: 10px;
+      width: 90%;
+    }
+    #justificationForRequest{
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 5px 10px;
+      margin-top: 10px;
+      width: 90%;
+    }
+    #submit{
+      margin-bottom: 10px;
+      margin-left: 360px;
+    }
+    /* #reset{
+      margin-left: 10px;
+      margin-bottom: 10px;
+    } */
+    form{
+      padding-left: 20px;
+      border: 1px solid;
+    }
+    .mypopup{
+      margin-top:50px;
+      margin-left:140px;   
+    }
+    #myTable{
+      border-collapse: collapse;
+      border: 1px solid black;
+      table-layout: auto;
+  width: 100%;
+    }
+    th,td {
+      border: 1px solid black;
+    }
+    tr:nth-child(even) {
+      background-color: #ffd1b3  ;
+    }
+    img{margin:10px;}

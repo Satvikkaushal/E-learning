@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/satvik
+    username: root
+    password: system
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true

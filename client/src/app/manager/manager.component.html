@@ -1,0 +1,66 @@
+<app-navformanager></app-navformanager>
+<br>
+
+<!-- <div class="employeetext"><div class="row">
+  <div class="col-sm-3 col-md-6">
+    <h2>Available Courses</h2>
+  </div>
+  <div class="col-sm-9 col-md-6">
+    <h5><img id="search" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3osnzxZaACh_8bjtGUq8H0YSfoOybnIgnIustraZeIdGcWQaT" width="50" height="40"><input type="textarea" id="myInput" onkeyup="myFunction()" title="Type in a name" ></h5>
+  </div>
+</div>
+  <div class="available"><div class="inner">
+    <table id="myTable">
+      <tr class="header" style="text-align:center">
+        <th>Name</th>
+        <th>image</th>
+        <th>Description</th>
+        <th>type</th>
+        <th>duration</th>
+        <th>Button</th>
+      </tr>
+      <tr *ngFor ='let user of users$' style="text-align:center">
+          <td><img src="{{user.courseImage}}" width="300" height="100"></td>
+          <td>{{user.courseName}}</td>
+          <td>{{user.courseDescription}}</td>  
+          <td>{{user.courseType}}</td>
+          <td>{{user.courseDuration}}</td>
+          <td><button (click)="addtomycourse(user.courseId)"  class="btn btn-danger">Add</button></td>
+          </tr>
+    </table>
+  </div></div>
+
+</div> -->
+<div class="employeetext1"><div class="row">
+    <div class="col-sm-3 col-md-6">
+      <h2>Requested Courses</h2>
+    </div>
+  </div>
+  
+  <div class="requested"><div class="innertable">
+      <table id="myTablerequested">
+        <tr class="header" style="text-align:center">
+          <th>EmployeeId</th>
+          <th>Enrolled EmpCourseId</th>
+          <th>Requested CourseName</th>
+          <th>Requested CourseJustification</th>
+        </tr>
+        <tr *ngFor ='let user of EmpList' style="text-align:center">
+        <td>{{user.empId}}</td>
+        <!-- <td><img src="{{user.imgLink}}" width="300" height="100"></td> -->
+        <td><li *ngFor = "let sug of user.empAddedCoursesIds">{{sug}} </td> 
+        <td><li *ngFor = "let sug of user.empSugCourse">{{sug.reqCourse}} </td>  
+          <td><li *ngFor = "let sug of user.empSugCourse">{{sug.reqCJustification}}</td>
+           
+        <!-- <td>{{user.type}}</td> -->
+  
+        <!-- <td>{{user.duration}}</td> -->
+  
+        <!-- <td><button (click)="addtomycourse(user)"  class="btn btn-danger">Add</button></td> -->
+        </tr>
+      </table>
+    </div></div><br><br>
+    <!-- <button class="btn btn-danger">My Leranings</button> -->
+  
+  </div>
+  

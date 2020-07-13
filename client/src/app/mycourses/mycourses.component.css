@@ -1,0 +1,49 @@
+.enrolledcourse{
+  margin-left: 20px;
+  border:2px solid black;
+  color:black;  
+  overflow:hidden;
+  text-align:justify;  
+  width: 1000px;  
+}
+
+.enrolledcourse .inner {
+  height:500px;
+  overflow:auto;
+  margin:15px -100px 15px 15px;
+}
+ 
+  .mycoursetable{
+    padding-left:120px;
+    margin-top: 20px;
+  }
+  #searchbox{
+margin-left: 130px;
+  }
+  h2{
+    font-weight: 800;
+  }
+  #myTable{
+    border-collapse: collapse;
+    border: 1px solid black;
+    table-layout: auto;
+    width: 90%;
+  
+  }
+  th,td {
+    border: 1px solid black;
+    text-decoration: none;
+  }
+  .requestedcourse .inner {
+    height:150px;
+    overflow:auto;
+    margin:15px -100px 15px 15px;
+  }
+  .requestedcourse{
+    margin-left: 20px;
+    border:2px solid black;
+    color:black;  
+    overflow:hidden;
+    text-align:justify;  
+    width: 1000px;  
+  }

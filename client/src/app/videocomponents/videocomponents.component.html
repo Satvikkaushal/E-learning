@@ -1,0 +1,13 @@
+<app-afterlogin></app-afterlogin>
+
+<div *ngFor ='let user of classes' style="text-align: center">
+  <br><br><br><h2>You have Enrolled for {{user.className}}</h2>  <br>
+  <h3>It is scheduled on {{user.classDate}}.</h3>
+    </div>
+  <div *ngFor ="let video of Videos; let i=index">
+    <img src="{{video.videoImage}}">  
+      <!-- <iframe width="560" height="315" src="C:/Users/Publi/Videos/Sample Videos/Wildlife.wmv" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+     
+</div>
+<!-- <iframe width="560" height="315" [src]="url" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      

@@ -1,0 +1,42 @@
+<app-afterlogin></app-afterlogin>
+<h2>Add course</h2>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter Course name</label>
+    <input type="text" class="form-control" id="coursename" name="courseName" [(ngModel)]="newDetails.courseName" placeholder="Enter name">
+    <label>Course Description</label>
+    <input type="text" class="form-control" id="description" name="courseDescription" [(ngModel)]="newDetails.courseDescription" placeholder="description">
+    <label >Course duration</label>
+    <input type="text" class="form-control" id="duration" name="courseDuration" [(ngModel)]="newDetails.courseDuration" placeholder="duration">
+    <label >imgae link </label>
+    <input type="text" class="form-control" id="image" name="courseImage" [(ngModel)]="newDetails.courseImage" placeholder="duration">
+    {{newDetails.courseName}}
+    <!-- <input type="text" class="form-control" id="duration" placeholder="type"> -->
+    <input value="video's details" id="1" (click)="fun1()" type="button" class="btn btn-danger"  data-toggle="modal" data-target="#myModal">
+    
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">videos</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <form>
+            <h5>Id</h5><input placeholder="Id"><br>
+            <h5>image link</h5><input placeholder="Image"><br>
+            <h5>video link</h5><input placeholder="Link"><br>
+            <input type="submit" class="btn btn-primary" value="submit" id="submit" (click)="submit()" >
+            <input type="reset" class="btn btn-primary" value="reset" id="reset" (click)="reset()" >
+            <!-- <button type="reset" id="reset" class="btn btn-primary" (click)="reset()" value="reset">Reset</button> -->
+          </form>
+        
+        </div>
+        </div>
+       </div>
+  </div>
+  <br>
+</form>
+
+
+
